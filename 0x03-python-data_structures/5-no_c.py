@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    
+
     result_list = []
 
     for char in my_string:
