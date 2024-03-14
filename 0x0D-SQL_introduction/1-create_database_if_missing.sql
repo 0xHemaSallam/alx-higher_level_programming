@@ -1,2 +1,2 @@
 -- -create_database_if_missing
-CREATE DATABASE hbtn_0c_0 if NOT EXISTS;
+CREATE DATABASE if NOT EXISTS hbtn_0c_0;
