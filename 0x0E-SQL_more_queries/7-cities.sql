@@ -1,4 +1,4 @@
--- 6-states.sql
+-- 7-cities.sql
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
