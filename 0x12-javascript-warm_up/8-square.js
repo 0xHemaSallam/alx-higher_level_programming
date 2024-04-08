@@ -1,5 +1,4 @@
 #!/usr/bin/node
-const process = require('process');
 
 const firstArg = process.argv[2];
 const parsedInt = parseInt(firstArg);
