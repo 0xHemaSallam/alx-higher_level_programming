@@ -7,7 +7,7 @@ const parsedInt = parseInt(firstArg);
 if (isNaN(parsedInt)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < parseInt(parsedInt); i++) {
-    console.log('#'.repeat(parseInt(parsedInt)));
+  for (let i = 0; i < parsedInt; i++) {
+    console.log('#'.repeat(parsedInt));
   }
 }
