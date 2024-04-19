@@ -20,7 +20,8 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
 
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC".format(state_name)
+    query = "SELECT * FROM states WHERE\
+        name = '{}' ORDER BY states.id ASC".format(state_name)
 
     cursor.execute(query)
 
