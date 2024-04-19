@@ -8,20 +8,16 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    # Extract command-line arguments
-    username = argv[1]
-    password = argv[2]
-    database = argv[3]
-    state_name = argv[4]
 
-    # Connect to the MySQL server
-    conn = MySQLdb.connect(host="localhost", port=3306, user=username,
-                           passwd=password, db=database, charset="utf8")
+    conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                           passwd=argv[2],
+                           db=argv[3],
+                           charset="utf8")
 
     cursor = conn.cursor()
 
     query = "SELECT * FROM states WHERE\
-        name = '{}' ORDER BY states.id ASC".format(state_name)
+        name = '{}' ORDER BY states.id ASC".format(argv[4])
 
     cursor.execute(query)
 
