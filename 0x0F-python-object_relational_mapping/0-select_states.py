@@ -11,9 +11,9 @@ if __name__ == "__main__":
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
-    query_rows = cursor.fetchall()
+    rows = cursor.fetchall()
 
-    for row in query_rows:
+    for row in rows:
         print(row)
 
     cursor.close()
